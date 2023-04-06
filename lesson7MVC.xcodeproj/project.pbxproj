@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		D50CD97329DB486900A3F267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CD97229DB486900A3F267 /* AppDelegate.swift */; };
 		D50CD97529DB486900A3F267 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CD97429DB486900A3F267 /* SceneDelegate.swift */; };
-		D50CD97729DB486900A3F267 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CD97629DB486900A3F267 /* ViewController.swift */; };
+		D50CD97729DB486900A3F267 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CD97629DB486900A3F267 /* QuestionViewController.swift */; };
 		D50CD97A29DB486900A3F267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D50CD97829DB486900A3F267 /* Main.storyboard */; };
 		D50CD97C29DB486B00A3F267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50CD97B29DB486B00A3F267 /* Assets.xcassets */; };
 		D50CD97F29DB486B00A3F267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D50CD97D29DB486B00A3F267 /* LaunchScreen.storyboard */; };
 		D50CD98B29DB5A3D00A3F267 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50CD98A29DB5A3D00A3F267 /* Question.swift */; };
+		D513C2C129DF3DD800C3EBAC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D513C2C029DF3DD800C3EBAC /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D50CD96F29DB486900A3F267 /* lesson7MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lesson7MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50CD97229DB486900A3F267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D50CD97429DB486900A3F267 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D50CD97629DB486900A3F267 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D50CD97629DB486900A3F267 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		D50CD97929DB486900A3F267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D50CD97B29DB486B00A3F267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D50CD97E29DB486B00A3F267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D50CD98029DB486B00A3F267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D50CD98A29DB5A3D00A3F267 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		D513C2C029DF3DD800C3EBAC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,8 @@
 		D50CD98829DB594D00A3F267 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D50CD97629DB486900A3F267 /* ViewController.swift */,
+				D50CD97629DB486900A3F267 /* QuestionViewController.swift */,
+				D513C2C029DF3DD800C3EBAC /* ResultViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -173,7 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D50CD97729DB486900A3F267 /* ViewController.swift in Sources */,
+				D513C2C129DF3DD800C3EBAC /* ResultViewController.swift in Sources */,
+				D50CD97729DB486900A3F267 /* QuestionViewController.swift in Sources */,
 				D50CD98B29DB5A3D00A3F267 /* Question.swift in Sources */,
 				D50CD97329DB486900A3F267 /* AppDelegate.swift in Sources */,
 				D50CD97529DB486900A3F267 /* SceneDelegate.swift in Sources */,

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lesson7MVC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,13 +39,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cu5-23-QgM">
-                                <rect key="frame" x="16" y="20" width="34" height="36"/>
+                                <rect key="frame" x="16" y="40" width="34" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1t-cH-lo6">
-                                <rect key="frame" x="270" y="20" width="34" height="36"/>
+                                <rect key="frame" x="270" y="40" width="34" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -87,7 +88,7 @@
         <!--Вопрос №-->
         <scene sceneID="dpa-Wk-wFd">
             <objects>
-                <viewController id="SYg-z1-7jC" sceneMemberID="viewController">
+                <viewController id="SYg-z1-7jC" customClass="QuestionViewController" customModule="lesson7MVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zQj-VL-zNv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,13 +202,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jy2-FJ-dFo">
                                         <rect key="frame" x="0.0" y="46" width="288" height="20.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzD-7x-Spi">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzD-7x-Spi">
                                                 <rect key="frame" x="0.0" y="0.0" width="229.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0d2-cQ-Xoq">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0d2-cQ-Xoq">
                                                 <rect key="frame" x="246.5" y="0.0" width="41.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -254,6 +255,15 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="questionLabel" destination="0Sq-om-Nse" id="EJw-YZ-dfn"/>
+                        <outlet property="questionProgressView" destination="cSY-Vv-Lrh" id="xxX-t7-8av"/>
+                        <outlet property="singleStackView" destination="p7c-nU-691" id="zl1-X4-NTN"/>
+                        <outletCollection property="singleButtons" destination="L96-lp-7YX" collectionClass="NSMutableArray" id="K2P-xm-dsq"/>
+                        <outletCollection property="singleButtons" destination="L96-lp-7YX" collectionClass="NSMutableArray" id="73J-kR-Dqd"/>
+                        <outletCollection property="singleButtons" destination="L96-lp-7YX" collectionClass="NSMutableArray" id="xdT-vs-VLe"/>
+                        <outletCollection property="singleButtons" destination="oZf-Ub-swM" collectionClass="NSMutableArray" id="ybA-gv-yzX"/>
+                        <outletCollection property="singleButtons" destination="hxY-V1-FfI" collectionClass="NSMutableArray" id="PiQ-Wa-suh"/>
+                        <outletCollection property="singleButtons" destination="hJC-2q-okZ" collectionClass="NSMutableArray" id="NpV-3z-vEc"/>
                         <segue destination="EHc-hp-XpZ" kind="show" identifier="showResult" id="0yZ-t5-iAD"/>
                     </connections>
                 </viewController>
@@ -264,7 +274,7 @@
         <!--Результат-->
         <scene sceneID="jA2-0q-kEq">
             <objects>
-                <viewController id="EHc-hp-XpZ" sceneMemberID="viewController">
+                <viewController id="EHc-hp-XpZ" customClass="ResultViewController" customModule="lesson7MVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="heh-Vb-DZG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
